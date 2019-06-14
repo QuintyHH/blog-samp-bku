@@ -1,7 +1,10 @@
-doctype html
-html
-  head
-  link 
+extend _component/layout/main
 
-  body
-    h1 hello9sadaskda
+block config
+  -
+    var title="Welcome to Q-Blog"
+    var description="A custom Blog showcase that is quickly managed, 100% responsive, with a Google Insights PageSpeed score of 100."
+
+block content
+  h1=title
+  p=description
