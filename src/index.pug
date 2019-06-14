@@ -1,4 +1,4 @@
-extend _component/layout/main
+extend _component/layout/base
 
 block config
   -
@@ -6,5 +6,12 @@ block config
     var description="A custom Blog showcase that is quickly managed, 100% responsive, with a Google Insights PageSpeed score of 100."
 
 block content
-  h1=title
-  p=description
+  .welcome
+    h1=title
+    p=description
+    a(href="#continue") click to continue reading
+    
+  #continue
+  p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  p 
+    small Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
