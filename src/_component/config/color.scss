@@ -1,0 +1,45 @@
+$color-bg1: #ffffff;
+$color-bg2: #ffffff;
+$color-bg3: #ffffff;
+$color-bg4: #ffffff;
+$color-text1: #ffffff;
+$color-title: #ffffff;
+$color-border1: #ffffff;
+$color-border2: #ffffff;
+$color-button: #ffffff;
+
+$color-white: #ffffff;
+$color-manatee: #8a8fa2;
+$color-fiord: #415a67;
+$color-sunglow: #FFBF3D;
+$color-yellow-sea: #FFAB01;
+$color-buttercup: #F49B0B;
+$color-lima: #5FCE27;
+$color-vida-loca: #48A11B;
+$color-bilbao: #357613;
+
+$color-cinnabar: #E04F23;
+$color-fuel-yellow: #ECA71E;
+$color-elf-green: #087f79;
+$color-millbrook: #54452e;
+$color-roman-coffee: #765F4C;
+$color-wheatfield: #F2EFCE;
+$color-raffia: #EAE1B3;
+$color-mikado: #2D2510;
+
+$theme: 'retro';
+@if ($theme == 'retro') {
+  $color-bg1: #e6da9e;
+  $color-bg2: #e6da9e;
+  $color-bg4: #dfb92a;
+  $color-bg3: #89b489;
+  $color-text1: #5a381c;
+  $color-title: #5a381c;
+  $color-border1: #dfb92a;
+  $color-border2: #c7731d;
+  $color-button: #89b489;
+};
+
+
+
+
