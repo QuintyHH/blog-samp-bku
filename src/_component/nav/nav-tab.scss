@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+
+  .menu {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .menu__panel {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+}

@@ -1,36 +1,3 @@
-.menu {
-  background-color:$color-bg2;
-  border: 0.3rem solid $color-border2;
-}
-
-.menu__title{
-  background-color:$color-bg2;
-  font-weight: bold;
-  color: $color-text1;
-  margin: 1rem 2rem;
-  padding: 0.3rem 1.5rem;
-  display: block;
-  font-size: 1.5rem;
-  border-top: 0.4rem solid $color-border2;
-  border-bottom: 0.4rem solid $color-border1;
-  border-radius: 1rem;
-  text-align: center; 
-}
-
-.menu__list{
-  margin: 0rem 1.5rem;
-  text-align: center;
-  background-color:$color-bg2;
-  
-  a { 
-    color: $color-text1;
-    text-decoration: none;
-    padding: 0.3rem 1rem;
-    display: block;
-    font-size: 1rem;
-  }
-
-  &:last-child{
-    margin-bottom: 1rem;
-  }
-}
+@import 'nav-mob';
+@import 'nav-tab';
+@import 'nav-desk';

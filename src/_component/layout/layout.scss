@@ -2,14 +2,15 @@ html,
 body {
   height:100%;
   font-family: 'Encode Sans Expanded', sans-serif;
-  box-sizing: border-box;
+
 }
 
 @media screen and (min-width: 25em){
-  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+  html { font-size: calc( 14px + (24 - 14) * (100vw - 400px) / (800 - 400) ); }
 }
 
 .welcome { 
+  height: 100%;
   box-sizing: border-box;
   background-image: radial-gradient($color-bg1, $color-bg1);
   display: flex;
@@ -17,9 +18,8 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: 0.4rem solid $color-border2;
-  height: 100%;
-   
+  border: 0.4rem solid $color-border1;
+     
   .title {
     color:$color-title;
     font-size: 3.4rem;
@@ -31,7 +31,7 @@ body {
     background-color: $color-bg2;
     border-top: 0.4rem solid $color-border2;
     border-bottom: 0.4rem solid $color-border1;
-    color: $color-text1;
+    color: $color-white;
     width: 70%;
     border-radius: 1rem;
 

@@ -1,13 +1,13 @@
 .footer {
   color:$color-text1;
   background-color:$color-bg2;
-  border-bottom: 0.3rem solid $color-border2;
-  border-left: 0.3rem solid $color-border2;
-  border-right: 0.3rem solid $color-border2;
+  border-bottom: 0.3rem solid $color-border1;
+  border-left: 0.3rem solid $color-border1;
+  border-right: 0.3rem solid $color-border1;
   padding: 1rem 0rem;
   display: flex;
   font-size: 0.8rem;
-
+  box-sizing: border-box;
 }
 
 .div {
