@@ -12,6 +12,9 @@
     margin-left: 2rem;
     list-style-type: none;
     border-radius: 1rem;
+    &:hover {
+      border-color: $color-sunglow;
+    }
   }
 
   a {
@@ -33,6 +36,10 @@
     color: $color-white;
     border-right: 0.3rem solid $color-bg1;
     border-radius: 1rem;
+    
+    &:hover {
+      border-color: $color-sunglow;
+    }
   } 
 }
 
