@@ -6,7 +6,7 @@ block config
     var description="A custom Blog showcase that is quickly managed, 100% responsive, with a Google Insights PageSpeed score of 100."
 
 block content
-  
+  #top
   .welcome
     h1.title=title
     p.welcome__description=description
@@ -14,7 +14,18 @@ block content
       span click to continue reading
       .qblog-icon--chevron-down
   
-  #continue
-  p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  p 
-    small Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  .content
+    #continue
+    p 
+      | You can find the resources for QBlog on 
+      a(href="https://github.com/QuintyHH/blog-samp", target="_blank") GitHub.
+    blockquote.blockquote
+      .blockquote__body
+        p The purpose of this exercise is to showcase HTML5 and CSS3.
+      .blockquote-footer
+        a(href="https://github.com/QuintyHH", target="_blank") - Razvan Mocanu -
+    p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+    p
+      small Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    a(href="#top") Top

@@ -27,7 +27,7 @@ $color-wheatfield: #F2EFCE;
 $color-raffia: #EAE1B3;
 $color-mikado: #2D2510;
 
-$theme: 'retro';
+$theme: 'dark';
 @if ($theme == 'retro') {
   $color-bg1: #e6da9e;
   $color-bg2: #e6da9e;
@@ -38,6 +38,18 @@ $theme: 'retro';
   $color-border1: #dfb92a;
   $color-border2: #c7731d;
   $color-button: #89b489;
+};
+
+@if ($theme == 'dark') {
+  $color-bg1: $color-fiord;
+  $color-bg2: $color-manatee;
+  $color-bg4: #dfb92a;
+  $color-bg3: #89b489;
+  $color-text1: $color-white;
+  $color-title: $color-sunglow;
+  $color-border1: $color-fiord;
+  $color-border2:$color-fiord;
+  $color-button: $color-manatee;
 };
 
 

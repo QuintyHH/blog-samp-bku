@@ -1,0 +1,65 @@
+html,
+body {
+  height:100%;
+  font-family: 'Encode Sans Expanded', sans-serif;
+ }
+
+@media screen and (min-width: 20em){
+  html { font-size: calc( 12px + (24 - 12) * (100vw - 400px) / (800 - 400) ); }
+}
+
+.welcome { 
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: radial-gradient($color-bg2, $color-bg1);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.3rem solid $color-border1;
+     
+  .title {
+    color:$color-title;
+    font-size: 3.4rem;
+    padding: 1rem 0.5rem 2rem;
+  }
+  
+  .welcome__description{
+    margin: 1rem;
+    padding: 0.8rem 1rem;
+    border-top: 0.3rem solid $color-border2;
+    border-bottom: 0.3rem solid $color-border2;
+    color: $color-white;
+    width: 70%;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+
+    &:hover{
+      border-color: $color-bg4;
+    }
+ }
+  .qblog-icon--chevron-down {
+    margin: 0 0.1rem 0 0.5rem;
+    color: $color-bg1;
+  }
+
+  .scroll-down {
+    text-decoration: none;
+    border: 0.3rem solid $color-border1;
+    padding: 0.4rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    background-color: $color-white;
+    color: $color-bg1;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+         
+    &:hover {
+      border-color: $color-bg4;
+    }
+  }
+}
