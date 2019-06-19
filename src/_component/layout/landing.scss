@@ -56,6 +56,13 @@
 
 .content {
   padding: 1.5rem;
+  
+
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
 
   h2 {
       font-size: 3rem;
@@ -65,5 +72,27 @@
       line-height: 3rem;
       text-justify: center;
       margin-bottom: 0.5rem;
+      
+  }
+
+  blockquote {
+    margin: 1rem;
+    padding: 0.2rem;
+    border-left: 0.3rem solid $color-fiord;
+  }
+
+  .blockquote-footer {
+    margin: 0.5rem 0;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  .top {
+    text-align: right;
+    display: block;
+    margin: 1rem;
   }
 }
+

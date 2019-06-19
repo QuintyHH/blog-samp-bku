@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  width: 100vw;
   font-family: 'Encode Sans Expanded', sans-serif;
   font-display: swap;
 }
@@ -28,7 +29,18 @@ body {
 .menu { grid-area: menu; }
 .footer { grid-area: footer; }
 
-@media (orientation: portrait) {
+body
+  {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto auto 5rem;
+    grid-template-areas:
+    'welcome'
+    'content'
+    'menu'
+    'footer'
+  }
+
+@media (min-width: 768px) {
   body
   {
     grid-template-columns: 1fr;
@@ -41,7 +53,7 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media (min-width: 1280px) {
   body
   {
     grid-template-columns: 2fr 1fr;
