@@ -25,8 +25,8 @@ body {
 }
 
 .welcome { grid-area: welcome; }
-.content { grid-area: content; }
-.menu { grid-area: menu; }
+.content { grid-area: cont; }
+.menu { grid-area: men; }
 .footer { grid-area: footer; }
 
 body
@@ -35,8 +35,8 @@ body
     grid-template-rows: 100vh auto auto 5rem;
     grid-template-areas:
     'welcome'
-    'content'
-    'menu'
+    'cont'
+    'men'
     'footer'
   }
 
@@ -47,8 +47,8 @@ body
     grid-template-rows: 100vh auto auto 5rem;
     grid-template-areas:
     'welcome'
-    'content'
-    'menu'
+    'cont'
+    'men'
     'footer'
   }
 }
@@ -60,8 +60,8 @@ body
     grid-template-rows: 100vh auto auto 5rem;
     grid-template-areas:
     'welcome welcome'
-    'content menu'
-    'content menu'
+    'cont men'
+    'cont men'
     'footer footer'
   }
 }

@@ -6,14 +6,6 @@ block config
     var description="A custom Blog showcase that is quickly managed, 100% responsive, with a Google Insights PageSpeed score of 100."
 
 block content
-  
-  .welcome
-    h1.title=title
-    p.welcome__description=description
-    a.scroll-down(href="#continue") 
-      span click to continue reading
-      .qblog-icon--chevron-down
-  
   .content
     #continue
     h2 First, let's fill in some content!
@@ -29,4 +21,4 @@ block content
     
     p
       small Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    include _component/top-arrow/top-arrow
+    include _component/scroll-top/scroll-top
