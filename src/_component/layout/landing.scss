@@ -18,6 +18,18 @@
     border-radius: 50%;
     box-shadow: 3px 5px;
   }
+
+  .title__secondary {
+    color:$color-title;
+    font-size: 3.4rem;
+    padding: 1rem 0.5rem 3rem;
+    margin: 0rem 2rem;
+    // border-left:0.1rem solid $color-white;
+    // border-bottom:0.6rem solid $color-white;
+    // border-right:0.5rem solid $color-white;
+    // border-radius: 50%;
+    // box-shadow: 3px 5px;
+  }
   
   .welcome__description {
     margin: 0rem 3rem;
@@ -54,18 +66,27 @@
   }
 }
 
+ol {
+  padding: 1rem 2rem;
+
+  li {
+    line-height: 1.7;
+  }
+}
+
+h3 {
+  padding: 1rem;
+}
+
 .content {
   padding: 1.5rem;
   
-
-
   a {
     text-decoration: none;
     color: $color-white;
   }
 
   h2 {
-      font-size: 3rem;
       color:$color-bg1;
       font-weight: bold;
       padding: 1.5;
