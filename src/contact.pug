@@ -1,10 +1,25 @@
 extend _component/layout/landing
 block config
   -
-    var title="Contact Q-Blog"
+    var title="Contact QBlog"
     var description="Contact Razvan Mocanu"
 
 block content
   .content
-    h1=title
-    p=description
+    #continue
+    p You can find Razvan Mocanu on these social media platforms:
+    ul
+      li
+        a(href="https://www.facebook.com/mysthh") Facebook
+      li
+        a(href="https://www.facebook.com/mysthh") Twitter
+      li
+        a(href="https://www.facebook.com/mysthh") LinkedIn
+      li
+        a(href="https://quintyhh.github.io/my-resume/") Personal Website
+    hr
+    figure.image-container
+      img.image(src="/asset/image/iarna.jpg")
+      figcaption.image-caption
+        strong Note: 
+        span Because winter's not like summer
