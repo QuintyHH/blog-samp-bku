@@ -1,0 +1,13 @@
+extend ../_component/layout/secondary
+block config
+  -
+    var title="Introduction to CSS3"
+    var description="A rudimentary introduction to CSS3"
+
+block content
+  .content
+    #continue
+    h2 Discover the amazing power of CSS3
+    .list-wrapper
+      each article in data.css
+        include ../_component/article/article 

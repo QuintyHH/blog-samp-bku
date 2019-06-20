@@ -10,19 +10,19 @@
     margin-left: 2rem;
     text-align: left;
     font-weight: bold;
-    color: $color-white;  
+    color: $color-sunglow;  
   }
 
   .footer_list{
     flex-grow: 1;
-    color: $color-bg2;
+    color: $color-sunglow;
     text-align: left;
     
     ul {
       list-style: none;
     }
     &:hover {
-      border-color: $color-sunglow;
+      border-color: $color-white;
     }
   }
 }
@@ -30,9 +30,9 @@
   a {
     font-size: 1rem;
     text-decoration: none;
-    color:$color-text1;
+    color:$color-sunglow;
     transition: 0.5s;
     &:hover {
-      color: $color-bg4;
+      color: $color-white;
     }
   }

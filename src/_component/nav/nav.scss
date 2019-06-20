@@ -46,14 +46,14 @@
     margin: 0.3rem auto;
       
     a {
-      color: $color-white;
+      color: $color-fiord;
       text-decoration: none;
       font-size: 1.2rem;     
       padding: 0rem 0.5rem;
       transition: 0.5s;
 
       &:hover{
-        color: $color-fiord;
+        color: $color-white;
       }
     }
   }

@@ -1,0 +1,13 @@
+extend ../_component/layout/secondary
+block config
+  -
+    var title="Introduction to HTML5"
+    var description="Discover HTML for beginners"
+
+block content
+  .content
+    #continue
+    h2 Read more to find out how cool HTML really is
+    .list-wrapper
+      each article in data.html
+        include ../_component/article/article

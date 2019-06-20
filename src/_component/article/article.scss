@@ -1,0 +1,28 @@
+.article {
+  padding:1rem;
+
+  &:nth-child(odd){
+    background-color: $color-fuel-yellow;
+  }
+
+  h3 {
+    color: $color-fiord;
+    font-weight: bold;
+  }
+
+  &-link{
+    text-align: right;
+ 
+    a:hover{
+      color: $color-fiord;
+    }
+  }
+
+  .qblog-icon--chevron-down {
+    color: $color-white;
+  }
+
+  p {
+    padding: 0.5rem 1rem;
+  }
+}

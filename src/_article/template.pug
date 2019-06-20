@@ -1,0 +1,16 @@
+extend ../_component/layout/secondary
+block config
+  -
+    var title="About QBlog"
+    var description="QBlog is one of the fastest blogging tools."
+
+block content
+  .content
+    #continue
+    each content in template.body
+      if content.type == "h2"
+        h2=content.data
+      if content.type == "p"
+        each para in content.data
+          p=para
+    //- pre=JSON.stringify(template.body, null, 2)

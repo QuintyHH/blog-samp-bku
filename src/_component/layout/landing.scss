@@ -20,20 +20,27 @@
     width: 80%;
   }
 
+  .title-sec{
+    color:$color-title;
+    font-size: 4rem;
+    padding: 1rem 0.5rem 3rem;
+    margin: 0rem auto;
+    width: 80%;
+  }
+
   .welcome__description {
     margin: 0rem auto;
     padding: 0.5rem 1.5rem;
-    color: $color-white;
+    color: $color-sunglow;
     border-radius: 2rem;
     font-size: 1.5rem;
     line-height: 1.6rem;
-    border-color: $color-white;
     width: 90%;
   }
   
   .scroll-down {
     text-decoration: none;
-    border: 0.3rem solid $color-white;
+    border: 0.3rem solid $color-sunglow;
     padding: 0.4rem;
     margin: 2rem;
     border-radius: 2rem;
@@ -51,7 +58,7 @@
     }
           
     &:hover {
-      border-color: $color-sunglow;
+      border-color: $color-white;
       box-shadow: 0.5rem 0px,
                  -0.5rem 0px;
     }
