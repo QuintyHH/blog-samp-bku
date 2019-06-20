@@ -25,7 +25,7 @@ body {
   display: grid;
   background-color: $color-sunglow;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh auto auto 5rem;
+  grid-template-rows: 100vh auto auto auto;
   grid-template-areas:
   'welcome'
   'content'
