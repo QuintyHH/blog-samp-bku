@@ -1,16 +1,46 @@
 extend ../_component/layout/secondary
 block config
   -
-    var title="About QBlog"
-    var description="QBlog is one of the fastest blogging tools."
+    var title=template.head.title || 'Change me!'
+    var description=template.head.description || 'Change me!'
 
 block content
   .content
     #continue
     each content in template.body
-      if content.type == "h2"
-        h2=content.data
-      if content.type == "p"
-        each para in content.data
-          p=para
+      if content.type == "blockquote"
+        blockquote.blockquote
+          .blockquote__body
+            each paragraph in content.data
+              p=paragraph 
+          .blockquote-footer
+            a(href=content.link, target="_blank")=content.source
+    
+      if ["h1", "h2", "h3", "h4", "h5", "h6"].indexOf(content.type) !== -1
+        #{content.type} #{content.data}
+
+      if content.type == "paragraph" || content.type == "p"
+        each p in content.data
+          p= p
+      
+      if content.type === "paragraph-safe"
+        each p in content.data
+          p!= p
+
+      if ["ol", "ul"].indexOf(content.type) !== -1
+        #{content.type}
+          each listItem in content.data
+            li= listItem
+
+      if content.type === "pre"
+        h3.pre-title= content.title
+        each dataVal in content.data
+          pre= dataVal
+
+      if content.type === "img"
+        img(src=content.src)
+      //-   +image({filename: content.src, caption: content.caption, autopath: content.autopath})
+      
+      if content.type === "hr"
+        hr
     //- pre=JSON.stringify(template.body, null, 2)

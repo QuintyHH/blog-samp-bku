@@ -21,10 +21,7 @@ const deploy = ({
           file.dirname = pathPartList.join(path.sep);
         }
       }))
-      .pipe(plugins.ghPages())
-      .pipe(() => {
-        process.exit(0)
-      });
+      .pipe(plugins.ghPages());     
   });
 };
 
