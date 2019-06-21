@@ -48,10 +48,10 @@
       "cssModular": false,
       "css": {
         "embed": true,
-        "external": true
+        "external": false
       }
     },
-    "autoLaunchBrowser": true
+    "autoLaunchBrowser": false
   },
   "repository": {
     "type": "git",
